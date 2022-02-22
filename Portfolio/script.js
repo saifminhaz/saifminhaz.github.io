@@ -72,6 +72,7 @@ $(document).ready(function(){
     });
 });
 
+// Contact Form
 window.addEventListener("DOMContentLoaded", function () {
     // get the form elements defined in your form HTML above
   
@@ -117,3 +118,56 @@ function ajax(method, url, data, success, error) {
     };
     xhr.send(data);
 }
+
+// Modal
+// Get DOM Elements
+const modals = document.querySelectorAll(".modal");
+const modalBtns = document.querySelectorAll(".button");
+const closeBtns = document.querySelectorAll(".close");
+
+// Events
+modalBtns.forEach((btn, index) =>
+  btn.addEventListener("click", () => openModal(index))
+);
+closeBtns.forEach((btn, index) =>
+  btn.addEventListener("click", () => closeModal(index))
+);
+// for closing when you click outside
+modals.forEach((modal, index) =>
+  modal.addEventListener("click", (e) => {
+   if(e.target === e.currentTarget){
+     closeModal(index);
+   }
+})
+);
+
+// Open
+function openModal(index) {
+  modals[index].style.display = "block";
+}
+
+// Close
+function closeModal(index) {
+  modals[index].style.display = "none";
+}
+
+// End Modal
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      
+/* Pagination      
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+*/
+    });

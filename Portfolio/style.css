@@ -1,6 +1,5 @@
 /*  import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
-
 *{
     margin: 0;
     padding: 0;
@@ -568,115 +567,235 @@ footer span a:hover{
     }
 }
 @media (max-width: 947px){
-    .menu-btn{
-        display: block;
-        z-index: 999;
-    }
-    .menu-btn i.active:before{
-        content: "\f00d";
-    }
-    .navbar .menu{
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        left: -100%;
-        top: 0;
-        background: #111;
-        text-align: center;
-        padding-top: 80px;
-        transition: all 0.3s ease;
-    }
-    .navbar .menu.active{
-        left: 0;
-    }
-    .navbar .menu li{
-        display: block;
-    }
-    .navbar .menu li a{
-        display: inline-block;
-        margin: 20px 0;
-        font-size: 25px;
-    }
-    .home .home-content .text-2{
-        font-size: 70px;
-    }
-    .home .home-content .text-3{
-        font-size: 35px;
-    }
-    .home .home-content a{
-        font-size: 23px;
-        padding: 10px 30px;
-    }
-    .max-width{
-        max-width: 930px;
-    }
-    .about .about-content .column{
-        width: 100%;
-    }
-    .about .about-content .left{
-        display: flex;
-        justify-content: center;
-        margin: 0 auto 60px;
-    }
-    .about .about-content .right{
-        flex: 100%;
-    }
-    .services .serv-content .card{
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
-    }
-    .skills .skills-content .column,
-    .contact .contact-content .column{
-        width: 100%;
-        margin-bottom: 35px;
-    }
+.menu-btn{
+    display: block;
+    z-index: 999;
+}
+.menu-btn i.active:before{
+    content: "\f00d";
+}
+.navbar .menu{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: #111;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+}
+.navbar .menu.active{
+    left: 0;
+}
+.navbar .menu li{
+    display: block;
+}
+.navbar .menu li a{
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+}
+.home .home-content .text-2{
+    font-size: 70px;
+}
+.home .home-content .text-3{
+    font-size: 35px;
+}
+.home .home-content a{
+    font-size: 23px;
+    padding: 10px 30px;
+}
+.max-width{
+    max-width: 930px;
+}
+.about .about-content .column{
+    width: 100%;
+}
+.about .about-content .left{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+}
+.about .about-content .right{
+    flex: 100%;
+}
+.services .serv-content .card{
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+}
+.skills .skills-content .column,
+.contact .contact-content .column{
+    width: 100%;
+    margin-bottom: 35px;
+}
 }
 
 @media (max-width: 690px) {
-    .max-width{
-        padding: 0 23px;
-    }
-    .home .home-content .text-2{
-        font-size: 60px;
-    }
-    .home .home-content .text-3{
-        font-size: 32px;
-    }
-    .home .home-content a{
-        font-size: 20px;
-    }
-    .services .serv-content .card{
-        width: 100%;
-    }
+.max-width{
+    padding: 0 23px;
+}
+.home .home-content .text-2{
+    font-size: 60px;
+}
+.home .home-content .text-3{
+    font-size: 32px;
+}
+.home .home-content a{
+    font-size: 20px;
+}
+.services .serv-content .card{
+    width: 100%;
+}
 }
 
 @media (max-width: 500px) {
-    .home .home-content .text-2{
-        font-size: 50px;
-    }
-    .home .home-content .text-3{
-        font-size: 27px;
-    }
-    .about .about-content .right .text,
-    .skills .skills-content .left .text{
-        font-size: 19px;
-    }
-    .contact .right form .fields{
-        flex-direction: column;
-    }
-    .contact .right form .name,
-    .contact .right form .email{
-        margin: 0;
-    }
-    .right form .error-box{
-       width: 150px;
-    }
-    .scroll-up-btn{
-        right: 15px;
-        bottom: 15px;
-        height: 38px;
-        width: 35px;
-        font-size: 23px;
-        line-height: 38px;
-    }
+.home .home-content .text-2{
+    font-size: 50px;
+}
+.home .home-content .text-3{
+    font-size: 27px;
+}
+.about .about-content .right .text,
+.skills .skills-content .left .text{
+    font-size: 19px;
+}
+.contact .right form .fields{
+    flex-direction: column;
+}
+.contact .right form .name,
+.contact .right form .email{
+    margin: 0;
+}
+.right form .error-box{
+    width: 150px;
+}
+.scroll-up-btn{
+    right: 15px;
+    bottom: 15px;
+    height: 38px;
+    width: 35px;
+    font-size: 23px;
+    line-height: 38px;
+}
+}
+
+/* Modal section styling */
+
+:root {
+--modal-duration: 1s;
+--modal-color: crimson;
+}
+
+.button {
+font-family: 'poppins', sans-serif;
+display: inline-block;
+background: crimson;
+color: #fff;
+font-size: 18px;
+font-weight: 500;
+padding: 8px 16px;
+margin-top: 20px;
+border-radius: 6px;
+border: 2px solid crimson;
+transition: all 0.3s ease;
+}
+
+.button:hover {
+color: crimson;
+background: none;
+}
+
+.modal {
+font-family: 'Poppins', sans-serif;
+display: none;
+position: fixed;
+z-index: 99999;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+overflow: auto;
+background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+margin: 51px auto;
+width: 60%;
+box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+animation-name: modalopen;
+animation-duration: var(--modal-duration);
+}
+
+.modal-header h2,
+.modal-footer h3 {
+margin: 0;
+}
+
+.modal-header {
+background: var(--modal-color);
+font-size: 20px;
+text-align: center;
+padding: 10px;
+color: #fff;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+
+.modal-body {
+background:crimson;
+}
+
+.modal-footer {
+background: var(--modal-color);
+padding: 10px;
+font-size: 15px;
+color: #fff;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+}
+
+.close {
+float: right;
+font-size: 30px;
+color: #fff;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+.responsive {
+width: 100%;
+height: auto;
+}
+@keyframes modalopen {
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+}
+
+/* Swiper styling */
+.swiper {
+width: 100%;
+height: 100%;
+}
+
+.swiper-slide {
+text-align: center;
+font-size: 18px;
+background: #fff;
+}
+
+.swiper-slide img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
 }
