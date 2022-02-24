@@ -792,6 +792,9 @@ to {
     .modal-content {
         width: 90%;
     }
+    .modal-header {
+        font-size: 15px;
+    }
 }
 
 /* Swiper styling */
