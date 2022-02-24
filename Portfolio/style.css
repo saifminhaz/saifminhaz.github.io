@@ -733,8 +733,8 @@ left: 50%;
 transform: translate(-50%, -50%);
 }
 
-.modal-header h2,
-.modal-footer h3 {
+.modal-header h3,
+.modal-footer h4 {
 margin: 0;
 }
 
