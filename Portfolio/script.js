@@ -171,3 +171,24 @@ const swiper = new Swiper('.swiper', {
       },
 */
     });
+
+    //  Cookies Start
+
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#dc143c"
+    },
+    "button": {
+      "background": "#FFFF00"
+    }
+  },
+  "showLink": false,
+  "theme": "edgeless",
+  "content": {
+    "message": "My website uses cookies to ensure you get the best experience of my website.",
+    "dismiss": "Got it!"
+  }
+});
+
+//  Cookies End
