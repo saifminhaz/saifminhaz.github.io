@@ -135,9 +135,9 @@ closeBtns.forEach((btn, index) =>
 // for closing when you click outside
 modals.forEach((modal, index) =>
   modal.addEventListener("click", (e) => {
-   if(e.target === e.currentTarget){
-     closeModal(index);
-   }
+  if(e.target === e.currentTarget){
+  closeModal(index);
+  }
 })
 );
 
