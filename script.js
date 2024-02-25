@@ -192,3 +192,7 @@ window.cookieconsent.initialise({
 });
 
 //  Cookies End
+
+// Display current year on footer Start
+document.getElementById("year").innerHTML = new Date().getFullYear();
+// Display current year on footer End
